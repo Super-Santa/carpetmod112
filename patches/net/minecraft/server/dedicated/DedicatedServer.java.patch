@@ -1,0 +1,21 @@
+--- ../src-base/minecraft/net/minecraft/server/dedicated/DedicatedServer.java
++++ ../src-work/minecraft/net/minecraft/server/dedicated/DedicatedServer.java
+@@ -1,5 +1,6 @@
+ package net.minecraft.server.dedicated;
+ 
++import carpet.CarpetServer;
+ import com.google.common.collect.Lists;
+ import com.mojang.authlib.GameProfileRepository;
+ import com.mojang.authlib.minecraft.MinecraftSessionService;
+@@ -293,6 +294,11 @@
+                 }
+ 
+                 Items.field_190931_a.func_150895_a(CreativeTabs.field_78027_g, NonNullList.func_191196_a());
++
++                // [CM] Start
++                CarpetServer.onServerLoaded(this);
++                CarpetServer.onGameStarted();
++                // [CM] End
+                 return true;
+             }
+         }

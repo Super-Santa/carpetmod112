@@ -1,0 +1,10 @@
+--- ../src-base/minecraft/net/minecraft/world/storage/ISaveFormat.java
++++ ../src-work/minecraft/net/minecraft/world/storage/ISaveFormat.java
+@@ -1,6 +1,7 @@
+ package net.minecraft.world.storage;
+ 
+ import java.io.File;
++
+ import net.minecraft.util.IProgressUpdate;
+ 
+ public interface ISaveFormat

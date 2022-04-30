@@ -1,0 +1,10 @@
+--- ../src-base/minecraft/net/minecraft/server/MinecraftServer.java
++++ ../src-work/minecraft/net/minecraft/server/MinecraftServer.java
+@@ -453,7 +453,6 @@
+                 this.field_147147_p.func_151315_a(new TextComponentString(this.field_71286_C));
+                 this.field_147147_p.func_151321_a(new ServerStatusResponse.Version("1.12.2", 340));
+                 this.func_184107_a(this.field_147147_p);
+-
+                 while (this.field_71317_u)
+                 {
+                     long k = func_130071_aq();

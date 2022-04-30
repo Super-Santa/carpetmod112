@@ -1,0 +1,8 @@
+--- ../src-base/minecraft/net/minecraft/command/CommandException.java
++++ ../src-work/minecraft/net/minecraft/command/CommandException.java
+@@ -1,5 +1,4 @@
+ package net.minecraft.command;
+-
+ public class CommandException extends Exception
+ {
+     private final Object[] field_74845_a;

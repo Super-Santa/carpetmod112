@@ -1,0 +1,21 @@
+--- ../src-base/minecraft/net/minecraft/command/ServerCommandManager.java
++++ ../src-work/minecraft/net/minecraft/command/ServerCommandManager.java
+@@ -1,5 +1,7 @@
+ package net.minecraft.command;
+ 
++import carpet.CarpetServer;
++import com.sk89q.jchronic.handlers.IHandler;
+ import net.minecraft.command.server.CommandBanIp;
+ import net.minecraft.command.server.CommandBanPlayer;
+ import net.minecraft.command.server.CommandBroadcast;
+@@ -90,6 +92,10 @@
+         this.func_71560_a(new CommandReload());
+         this.func_71560_a(new CommandFunction());
+ 
++        // [CM] Start
++        CarpetServer.registerCarpetCommands(this);
++        // [CM] End
++
+         if (p_i46985_1_.func_71262_S())
+         {
+             this.func_71560_a(new CommandOp());
